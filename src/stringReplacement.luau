@@ -9,7 +9,10 @@ function module.PerformTests(required)
   
 		for _, v in testArray do
         local answer = required(v)
-        local rightAnswer = string.split(v, "e")[1] .. "ing"
+        local rightAnswer = "
+        for i2, v2 in string.split(v, "er") do
+            rightAnswer = rightAnswer .. v2 .. "ing"
+        end
 
         if answer ~= rightAnswer then
             return "modules's function returned the wrong string, right answer: {rightAnswer}, module's answer: {answer}"
