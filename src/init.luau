@@ -1,13 +1,13 @@
 local module = {
 	{
-		Name = "Testing 101",
-		Description = "Test",
+		Name = "Custom - String Manipulation #1",
+		Description = 'Create a module to replace "er" to "ing" in a string',
 		Explanations = {
-			Test1 = "Test",
-                        Test2 = "test2 lol",
+			Function = 'The function the module returns should take a string parameter.',
+                        Behaviour = 'The function should replace all mentions of the string "er" with "ing".'
 		},
-		Module = "Testing",
-		Color = Color3.fromRGB(0, 0, 0),
+		Module = "stringReplacement",
+		Color = Color3.fromRGB(0, 255, 0),
 	},
 }
 
